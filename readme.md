@@ -12,15 +12,7 @@ A simple and efficient notification service for sending emails, SMS, and push no
 
 ---
 
-## Tech Stack 💻
-
-### Frontend
-
-- **React 18**
-- **Vite 4**
-- **Material UI 5**
-- **Axios 1.3**
-- **React Router 6**
+## Tech Stack 
 
 ### Backend
 
@@ -41,17 +33,6 @@ A simple and efficient notification service for sending emails, SMS, and push no
 ```
 
 notification-service/
-├── client/
-│ ├── public/
-│ ├── src/
-│ │ ├── assets/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── services/
-│ │ ├── App.jsx
-│ │ └── main.jsx
-│ ├── package.json
-│ └── vite.config.js
 │
 ├── server/
 │ ├── config/
@@ -82,7 +63,7 @@ notification-service/
 
 ---
 
-## API Documentation 📝
+## API Documentation
 
 ### Notification API
 
@@ -108,7 +89,7 @@ GET /users/:id/notifications
 
 ---
 
-## Environment Setup 🌍
+## Environment Setup 
 
 ### Server `.env`
 
@@ -140,50 +121,6 @@ FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nxxx\n-----END PRIVATE KEY----
 FIREBASE_CLIENT_EMAIL=firebase-adminsdk@your-project.iam.gserviceaccount.com
 ```
 
-### Client `.env`
-
-Create a `.env` file inside the `client/` directory:
-
-```ini
-VITE_API_URL=http://localhost:3000
-```
-
----
-
-## Local Development 🌱
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/your-username/notification-service.git
-cd notification-service
-```
-
-### Start Backend
-
-```bash
-cd server
-npm install
-npm run dev
-```
-
-### Start Frontend
-
-```bash
-cd ../client
-npm install
-npm run dev
-```
-
-### Access the Application
-
-Open your browser and go to:
-
-```
-http://localhost:5173
-```
-
----
 
 ## Deployment 🚢
 
@@ -194,7 +131,6 @@ For deployment, you can use services like **Heroku**, **AWS**, **DigitalOcean**,
 ## Troubleshooting 🛠️
 
 - **Backend is not starting**: Ensure that the MongoDB and RabbitMQ services are running and the environment variables are correctly set.
-- **Frontend is not loading**: Make sure the API URL in the client `.env` file is pointing to the correct backend server.
 - **Email/SMS notifications not working**: Double-check the configuration for **Nodemailer** and **Twilio** in your `.env` files.
 - **Push notifications not sending**: Ensure Firebase Admin SDK credentials are correct and the necessary Firebase configurations are set up.
 
